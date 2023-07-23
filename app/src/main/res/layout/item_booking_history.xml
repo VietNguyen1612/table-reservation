@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/define_dimen_10"
+    android:layout_marginEnd="@dimen/define_dimen_10"
+    app:cardCornerRadius="@dimen/define_dimen_6">
+        <LinearLayout
+            android:id="@+id/layout_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_small"
+            android:text="Trạng thái"/>
+        <TextView
+            android:id="@+id/tv_guest_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_2"
+            android:textSize="@dimen/text_size_small"
+            android:text="Số người"/>
+        <TextView
+            android:id="@+id/tv_arrived_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_2"
+            android:textSize="@dimen/text_size_small"
+            android:text="Thời gian đến: "/>
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/define_dimen_2"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="Khu vực ngồi: "/>
+        <TextView
+            android:id="@+id/tv_res_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_2"
+            android:textSize="@dimen/text_size_small"
+            android:text="Tên nhà hàng: "/>
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_2"
+            android:textSize="@dimen/text_size_small"
+            android:text="Ghi chú: "/>
+        </LinearLayout>
+</androidx.cardview.widget.CardView>

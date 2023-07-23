@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription, Autofill">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/define_dimen_10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/textColorSecondary"
+                android:text="Tên nhà hàng"/>
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/define_dimen_4"
+                android:background="@drawable/bg_white_corner_6_border_gray"
+                android:hint="Tên..."
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/define_dimen_12"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/textColorSecondary"
+                android:layout_marginTop="@dimen/define_dimen_10"
+                android:text="Mô tả"/>
+
+            <EditText
+                android:id="@+id/edt_description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/define_dimen_100"
+                android:layout_marginTop="@dimen/define_dimen_4"
+                android:background="@drawable/bg_white_corner_6_border_gray"
+                android:hint="Mô tả..."
+                android:imeOptions="actionNext"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/define_dimen_12"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="@dimen/define_dimen_10"
+                android:textColor="@color/textColorSecondary"
+                android:text="Giá"/>
+
+            <EditText
+                android:id="@+id/edt_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/define_dimen_4"
+                android:background="@drawable/bg_white_corner_6_border_gray"
+                android:hint="Giá..."
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/define_dimen_12"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/text_size_small" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/textColorSecondary"
+                android:layout_marginTop="@dimen/define_dimen_10"
+                android:text="Địa chỉ"/>
+
+            <EditText
+                android:id="@+id/edt_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/define_dimen_100"
+                android:layout_marginTop="@dimen/define_dimen_4"
+                android:background="@drawable/bg_white_corner_6_border_gray"
+                android:hint="Địa chỉ..."
+                android:imeOptions="actionNext"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/define_dimen_12"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/text_size_small" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/textColorSecondary"
+                android:layout_marginTop="@dimen/define_dimen_10"
+                android:text="Hình ảnh"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_xsmall"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Phân cách bởi dấu chấm phẩy [ ; ]"/>
+
+            <EditText
+                android:id="@+id/edt_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/define_dimen_100"
+                android:layout_marginTop="@dimen/define_dimen_4"
+                android:background="@drawable/bg_white_corner_6_border_gray"
+                android:hint="Ảnh..."
+                android:imeOptions="actionDone"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/define_dimen_12"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/text_size_small" />
+
+            <Button
+                android:id="@+id/btn_add_or_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/define_dimen_20"
+                android:background="@drawable/bg_main_corner_8"
+                android:text="Thêm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
